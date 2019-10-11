@@ -114,8 +114,9 @@ class App(ttk.Frame):
         filetypes = (("PNG files", "*.png"),
                      ("All files", "*.*"))
         path = tkFileDialog.asksaveasfilename(filetypes=filetypes)
-        self.save_image(path)
-        self.saving_filename = path
+        if len(path) != 0:
+            self.save_image(path)
+            self.saving_filename = path
 
     def __update_statusLab (self):
         fmt = "cv.Canny(gray_image, {}, {})"
