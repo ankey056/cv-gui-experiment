@@ -16,7 +16,7 @@ or with dialog window:
 ### Key bindings
 
 + 'o' - open file
-+ 's' - save image
++ 'S' - save image
 + 'Ctrl-s' - save image in new file
 + 'Z' - change zoom mode
 + 'z' - zoom
